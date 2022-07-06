@@ -1,4 +1,5 @@
 # weather-app
-this weather app is buld by using open weather api 
-
-
+This project is build by using open weather api
+(https://rapidapi.com/community/api/open-weather-map)
+ demo link: https://aasimtaif.github.io/weather-app/
+ 
