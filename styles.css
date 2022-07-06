@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Mono&display=swap');
+#city-input,
+#weather-output {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+
+body {
+    /*background-color: skyblue;*/
+    background: rgb(237, 238, 239);
+    font-family: 'Langar', cursive;
+    font-weight: bold;
+    background-image: url('./images/weather.jpg');
+    background-repeat:no-repeat;
+background-size: 100% auto;
+background-position:center;    
+}
+
+.banner {
+    color: #876f22;
+    font-family: sans-serif;
+}
+.main{
+width: 40rem;
+height: 40rem;
+margin: auto;
+}
+
+main {
+    margin: 10% auto;
+    width: 30rem;
+    height: auto;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    background-color: rgba(245, 245, 245, 0.4);
+    box-shadow: 10px 10px 10px rgba(36, 36, 36, 0.579);
+    padding: 1rem 3%;
+
+
+}
+
+
+.form-group {
+    margin: 10%;
+    background-color: transparent;
+
+}
+
+.temp-content {
+    margin:2rem 0;
+    border-radius: 10px;
+    background-color:rgb(202, 200, 200)
+}
+
+.footer {
+    position:absolute;
+    top: 0;
+    right: 0;
+    width: 2rem;
+    background-color: rgba(245, 245, 245, 0.4);
+border-radius:5px;
+    padding: 1rem;
+    display: grid;
+    object-position: center;
+    grid-auto-flow: row;
+    justify-content: center;
+   
+}
+
+.footer a{
+    margin:  0.5rem;
+}
