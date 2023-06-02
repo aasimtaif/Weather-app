@@ -1,23 +1,14 @@
 
-
 const getWeatherData = (city) => {
-    const options = {
-        method: 'GET',
-        headers: {
-            'X-RapidAPI-Key': 'c2f264a77emshfd83a91061058d6p1b6f5bjsn3644fe2d6c3f',
-            'X-RapidAPI-Host': 'community-open-weather-map.p.rapidapi.com'
-        }
-    };
-
-    return fetch(`https://community-open-weather-map.p.rapidapi.com/weather?q=${city}&units=imperial`, options)
+    const API_KEY = "e98910bc3848dcac21e2226526cf2102"
+    const API_URL = `https://api.openweathermap.org/data/2.5/weather?q=` 
+    return fetch(`${API_URL}${city}&appid=${API_KEY}&units=metric
+    `)
         .then(response => response.json())
         .then(data => data)
         .catch(err => console.error(err));
 }
-/**
- * Retrieve city input and get the weather data
- * HINT: Use the promise returned from getWeatherData()
- */
+
 const searchCity = async () => {
     const city = document.getElementById('city-input').value;
     const data = await getWeatherData(city)
@@ -25,11 +16,6 @@ const searchCity = async () => {
 
 }
 
-
-/**
- * Show the weather data in HTML
- * HINT: make sure to console log the weatherData to see how the data looks like
- */
 const showWeatherData = (weatherData) => {
 
     document.getElementById("city-name").innerText = weatherData.name;
